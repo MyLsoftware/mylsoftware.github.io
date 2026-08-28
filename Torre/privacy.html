@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!-- ============================================================================
+     TORRE — Privacy Policy
+     Un solo archivo para los DOS destinos, a propósito:
+       1) GitHub Pages  → https://mylsoftware.github.io/torre/privacy.html
+                          (es la URL que va en el campo de Play Console)
+                          Va en la subcarpeta /torre/ y no en la raiz para que el
+                          proximo juego de MyL Software entre como /otrojuego/ en
+                          el mismo repo, sin tocar nada de este. La raiz queda
+                          libre para una pagina de marca.
+       2) juego/privacy.html → el modal de Opciones > Acerca de lo pide con
+                          fetch() LOCAL y le inyecta el innerHTML de <main>.
+     Por eso el <style> vive en el <head> y NO adentro de <main>: al inyectar
+     solo el <main>, el juego lo pinta con su propio CSS y nada de esta hoja
+     viaja al modal.
+     Por eso también: cero recursos externos (ni fuentes, ni scripts). El modal
+     tiene que abrir sin conexión.
+     ============================================================================ -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — TORRE</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 2rem 1.25rem 4rem;
+    background: #14100d; color: #e8ded2;
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .25rem; color: #f4a259; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .5rem; color: #f4a259; }
+  a { color: #7fb2f0; overflow-wrap: anywhere; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .35rem 0; }
+  hr { border: 0; border-top: 1px solid #3a2a20; margin: 2rem 0; }
+  .meta { color: #a08e7c; font-size: .9rem; margin: 0 0 1.5rem; }
+  .perm { margin: .75rem 0; }
+  .perm b { color: #f0e2d0; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy — TORRE</h1>
+
+<p class="meta">
+  <strong>Effective date:</strong> 28 August 2026<br>
+  <strong>Last updated:</strong> 28 August 2026
+</p>
+
+<p>This Privacy Policy explains how the mobile game <strong>TORRE</strong> (the "Game"),
+published by <strong>MyL Software</strong> ("we", "us"), handles information. It applies
+only to the TORRE Android application distributed through Google Play.</p>
+
+<p><strong>Contact:</strong> <a href="mailto:hectorbon24@gmail.com">hectorbon24@gmail.com</a></p>
+
+<hr>
+
+<h2>Short summary</h2>
+
+<p>TORRE is a single-device game. It has no user accounts, no login, and no servers of ours.</p>
+
+<ul>
+  <li>We do <strong>not</strong> collect, store, or receive any personal information about you.</li>
+  <li>Everything you do in the Game — your scores, coins, unlocked content, settings and
+      player name — is saved <strong>only on your own device</strong>.</li>
+  <li>The Game contains <strong>advertising provided by Google AdMob</strong>. Google, as our
+      advertising partner, collects device information for that purpose. This is the only
+      third party involved and the only data that leaves your device to a company.</li>
+  <li>The Game's local two-player mode sends your chosen player name <strong>directly to the
+      other phone next to you</strong>, never to a server.</li>
+</ul>
+
+<hr>
+
+<h2>1. Information stored on your device</h2>
+
+<p>The Game saves the following on your device, using Android's standard app storage:</p>
+
+<ul>
+  <li>Your high scores and game statistics</li>
+  <li>Your in-game coin balance and which cosmetic items and collectibles you have unlocked</li>
+  <li>Your daily streak and number of days played</li>
+  <li>Your settings: language, graphics mode, audio volumes, notification preferences</li>
+  <li>The player name you type in, if you choose to enter one</li>
+  <li>A randomly generated device identifier used only to tell two phones apart during a
+      local match. It is not linked to you, to your Google account, or to any advertising
+      identifier.</li>
+  <li>Your local match history against nearby players</li>
+</ul>
+
+<p><strong>We never receive any of this.</strong> It is not transmitted to us and we have no
+way to access it. It stays in the Game's private storage on your phone.</p>
+
+<p><strong>Deleting it:</strong> uninstalling the Game removes all of it from your device.</p>
+
+<h2>2. Backup to your own Google account</h2>
+
+<p>Like most Android apps, TORRE uses Android's built-in <strong>Auto Backup</strong>. If
+backup is enabled in your device settings, Android may copy the Game's saved data to your
+personal Google Drive storage so that your progress can be restored if you reinstall the
+Game or set up a new phone.</p>
+
+<p>This is a feature of the Android operating system, performed by Google on your behalf and
+into <strong>your own</strong> Google account. <strong>We have no access to these
+backups.</strong> You can disable or delete backups at any time in your device settings,
+under Google &gt; Backup.</p>
+
+<h2>3. Local two-player mode</h2>
+
+<p>TORRE includes a local duel mode that connects two phones that are physically near each
+other, using <strong>Google Nearby Connections</strong> over Bluetooth and Wi-Fi.</p>
+
+<ul>
+  <li>The connection is <strong>direct between the two devices</strong>. No data passes
+      through our servers because we do not operate any.</li>
+  <li>What is exchanged during a match: the player name you chose, a device identifier used
+      to synchronise the match, and the moves and score of the match in progress.</li>
+  <li><strong>Choose a player name that does not identify you</strong> if you do not want the
+      other player to see it. The field is optional and can be left empty or changed at any
+      time in Options.</li>
+  <li>Nothing about a match is stored anywhere except locally on the two phones involved.</li>
+</ul>
+
+<h2>4. Permissions the Game requests, and why</h2>
+
+<p class="perm"><b>Internet</b> — to load advertisements.</p>
+
+<p class="perm"><b>Notifications</b> — only to show reminders you have explicitly turned on.
+Notifications are created and scheduled on your device; no message is sent from any
+server.</p>
+
+<p class="perm"><b>Bluetooth and Wi-Fi (scan, advertise, connect)</b> — only to find and
+connect to a nearby phone in local two-player mode.</p>
+
+<p class="perm"><b>Approximate and precise location (Android 12 and older only)</b> —
+<strong>we do not collect, use, or store your location.</strong> On these older Android
+versions, the operating system required apps to hold the location permission in order to
+scan for nearby Bluetooth devices at all. It is used solely to discover the other phone. On
+Android 13 and newer the Game does not request location permission.</p>
+
+<p>Notifications and the two-player mode are optional. If you decline these permissions, the
+rest of the Game works normally.</p>
+
+<h2>5. Advertising</h2>
+
+<p>TORRE shows advertisements supplied by <strong>Google AdMob</strong>. Ads that reward you
+with in-game coins are always optional: nothing in the Game requires you to watch one.</p>
+
+<p>To serve and measure ads, Google may collect and process information such as your
+device's advertising identifier, IP address, device type and operating system version, and
+your interactions with ads. This collection is carried out by Google, not by us, and is
+governed by Google's own policies. You can read how Google uses this information at
+<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>.</p>
+
+<p>We do not receive any personal information from Google. We only see aggregate,
+non-identifying reports such as how many ads were shown in total.</p>
+
+<p><strong>Your controls:</strong></p>
+
+<ul>
+  <li><strong>Reset or delete your advertising ID</strong>, or turn off ad personalisation,
+      in your device settings under Settings &gt; Privacy &gt; Ads. Deleting the identifier
+      stops personalised advertising.</li>
+  <li><strong>Users in the European Economic Area, the United Kingdom and Switzerland</strong>
+      are shown a consent form the first time ads appear, where you can accept or refuse
+      personalised advertising. You can change that choice later from the Game's Options
+      screen.</li>
+</ul>
+
+<h2>6. What the Game does not do</h2>
+
+<p>To be explicit, TORRE does <strong>not</strong>:</p>
+
+<ul>
+  <li>Require or offer any account, login, registration or email address</li>
+  <li>Contain chat, messaging, forums, or user-to-user text of any kind other than the
+      player name shown during a local duel</li>
+  <li>Use analytics, crash reporting, or any tracking or measurement tool of ours</li>
+  <li>Use cookies or similar web technologies</li>
+  <li>Collect, request, or store your contacts, photos, files, microphone, camera, calendar
+      or location data</li>
+  <li>Sell or share any information with data brokers</li>
+  <li>Offer in-app purchases. The current version of the Game contains none. If this
+      changes, this Policy will be updated before that version is released</li>
+</ul>
+
+<h2>7. Children</h2>
+
+<p>TORRE is not directed to children under 13, and we do not knowingly collect personal
+information from them. In Google Play the Game is rated for players aged 13 and over, and it
+is not part of the Designed for Families programme.</p>
+
+<p>If you are a parent or guardian and believe a child under 13 has provided personal
+information through the Game, please contact us at
+<a href="mailto:hectorbon24@gmail.com">hectorbon24@gmail.com</a> and we will take appropriate
+steps.</p>
+
+<p>If you are between 13 and 18, we suggest you review this Policy with a parent or guardian,
+and that you use a nickname rather than your real name in the local two-player mode.</p>
+
+<h2>8. Data retention and your rights</h2>
+
+<p>Because we hold no data about you, there is nothing for us to retain, correct, export, or
+delete on your behalf. All Game data is under your control:</p>
+
+<ul>
+  <li><strong>To delete everything:</strong> uninstall the Game. To also remove the cloud
+      backup described in section 2, delete the Game's backup in your device settings under
+      Google &gt; Backup.</li>
+  <li><strong>For data held by Google in connection with advertising</strong>, use Google's
+      own controls and the link in section 5.</li>
+</ul>
+
+<p>If you have a question about your data in relation to the Game, write to
+<a href="mailto:hectorbon24@gmail.com">hectorbon24@gmail.com</a> and we will answer.</p>
+
+<h2>9. Changes to this Policy</h2>
+
+<p>We may update this Policy when the Game changes. The current version is always available
+at the address where you are reading it and inside the Game itself, under Options &gt; About.
+The "Last updated" date at the top shows when it last changed. Continuing to use the Game
+after a change means you accept the updated Policy.</p>
+
+<h2>10. Contact</h2>
+
+<p><strong>MyL Software</strong><br>
+Email: <a href="mailto:hectorbon24@gmail.com">hectorbon24@gmail.com</a></p>
+
+</main>
+</body>
+</html>
