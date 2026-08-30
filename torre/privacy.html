@@ -8,11 +8,15 @@
                           proximo juego de MyL Software entre como /otrojuego/ en
                           el mismo repo, sin tocar nada de este. La raiz queda
                           libre para una pagina de marca.
-       2) juego/privacy.html → el modal de Opciones > Acerca de lo pide con
-                          fetch() LOCAL y le inyecta el innerHTML de <main>.
-     Por eso el <style> vive en el <head> y NO adentro de <main>: al inyectar
-     solo el <main>, el juego lo pinta con su propio CSS y nada de esta hoja
-     viaja al modal.
+       2) juego/privacy.html → el visor de Opciones > Acerca de lo carga en un
+                          <iframe> LOCAL, con esta misma hoja de estilos.
+     La primera versión del plan inyectaba el innerHTML de <main> en un modal del
+     juego, y por eso el <style> quedó en el <head>. Con iframe ya no hace falta
+     extraer nada: el documento se pinta solo, y se ve IGUAL adentro del juego y
+     abierto en un navegador. licenses.html se genera con esta misma hoja para que
+     los dos documentos sean el mismo dibujo.
+     ⚠ El <main> sigue siendo obligatorio: el visor comprueba que exista para
+     distinguir "cargó el documento" de "cargó la página de error del servidor".
      Por eso también: cero recursos externos (ni fuentes, ni scripts). El modal
      tiene que abrir sin conexión.
      ============================================================================ -->
