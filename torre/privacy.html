@@ -51,7 +51,7 @@
 
 <p class="meta">
   <strong>Effective date:</strong> 28 August 2026<br>
-  <strong>Last updated:</strong> 30 August 2026
+  <strong>Last updated:</strong> 16 October 2026
 </p>
 
 <p>This Privacy Policy explains how the mobile game <strong>TORRE</strong> (the "Game"),
@@ -67,12 +67,15 @@ only to the TORRE Android application distributed through Google Play.</p>
 <p>TORRE is a single-device game. It has no user accounts, no login, and no servers of ours.</p>
 
 <ul>
-  <li>We do <strong>not</strong> collect, store, or receive any personal information about you.</li>
-  <li>Everything you do in the Game — your scores, coins, unlocked content, settings and
-      player name — is saved <strong>only on your own device</strong>.</li>
+  <li>We do <strong>not</strong> collect your name, email, contacts, precise location or any
+      information that tells us who you are.</li>
+  <li>Your progress — scores, coins, unlocked content, settings and player name — is saved
+      <strong>only on your own device</strong>.</li>
   <li>The Game contains <strong>advertising provided by Google AdMob</strong>. Google, as our
-      advertising partner, collects device information for that purpose. This is the only
-      third party involved and the only data that leaves your device to a company.</li>
+      advertising partner, collects device information for that purpose (section 5).</li>
+  <li>The Game uses <strong>Google Firebase</strong> to receive anonymous usage statistics,
+      crash reports and game settings (section 6). These are not linked to your name, your
+      Google account or your advertising ID. Google is the only third party involved.</li>
   <li>The Game's local two-player mode sends your chosen player name <strong>directly to the
       other phone next to you</strong>, never to a server.</li>
 </ul>
@@ -96,7 +99,9 @@ only to the TORRE Android application distributed through Google Play.</p>
 </ul>
 
 <p><strong>We never receive any of this.</strong> It is not transmitted to us and we have no
-way to access it. It stays in the Game's private storage on your phone.</p>
+way to access it. It stays in the Game's private storage on your phone. (The anonymous
+statistics described in section 6 are counts and events, such as "a game ended at floor 40";
+they never include your player name, your balance or this identifier.)</p>
 
 <p><strong>Deleting it:</strong> uninstalling the Game removes all of it from your device.</p>
 
@@ -125,12 +130,17 @@ other, using <strong>Google Nearby Connections</strong> over Bluetooth and Wi-Fi
   <li><strong>Choose a player name that does not identify you</strong> if you do not want the
       other player to see it. The field is optional and can be left empty or changed at any
       time in Options.</li>
-  <li>Nothing about a match is stored anywhere except locally on the two phones involved.</li>
+  <li>The details of a match are stored only on the two phones involved. The anonymous
+      statistics of section 6 record that a match took place (result, score, duration) and
+      technical connection errors, <strong>never the player names or device identifiers</strong>
+      of either player.</li>
 </ul>
 
 <h2>4. Permissions the Game requests, and why</h2>
 
-<p class="perm"><b>Internet</b> — to load advertisements.</p>
+<p class="perm"><b>Internet</b> — to load advertisements, to send the anonymous usage
+statistics and crash reports described in section 6, and to download game settings. Without a
+connection the Game works normally.</p>
 
 <p class="perm"><b>Notifications</b> — only to show reminders you have explicitly turned on.
 Notifications are created and scheduled on your device; no message is sent from any
@@ -174,7 +184,48 @@ non-identifying reports such as how many ads were shown in total.</p>
       screen.</li>
 </ul>
 
-<h2>6. What the Game does not do</h2>
+<h2>6. Usage statistics, crash reports and game settings (Firebase)</h2>
+<p>TORRE uses three services of <strong>Google Firebase</strong>, provided by Google LLC, to
+understand how the Game is played, to fix errors, and to adjust some values without
+publishing a new version:</p>
+<ul>
+  <li><strong>Google Analytics for Firebase</strong> — anonymous usage statistics: when a game
+      starts and ends, its level, floors reached and duration; which power-ups are earned and
+      used; coins earned and items unlocked inside the Game; how long a rewarded video took to
+      load; which screens are opened; results and connection errors of local duels. Google also
+      records automatically the app version, device model, Android version, approximate country
+      and language (derived from a masked IP address), and when the Game was first opened.</li>
+  <li><strong>Firebase Crashlytics</strong> (not used in the European Economic Area, the United
+      Kingdom or Switzerland) — crash reports: when the Game closes unexpectedly
+      or an error occurs, a technical report is sent with the point in the code where it
+      happened, the device model and Android version, and the Game's language, graphics mode and
+      level. If the error happened around a local duel, the report may include the last lines of
+      the duel's technical log, with player names and device identifiers removed.</li>
+  <li><strong>Firebase Remote Config</strong> — the Game downloads, at most once per hour, a small
+      set of game settings (such as the duration of a power-up). Nothing about you is sent
+      except what is needed to deliver them.</li>
+</ul>
+<p>To work, these services create a random identifier for this installation of the Game (an
+"app instance" or "installation" ID). It is not your name, your Google account or your
+advertising ID, and a new one is created if you reinstall the Game. <strong>The advertising ID
+is not used for statistics.</strong></p>
+<p><strong>Never sent:</strong> your player name or anyone else's, the device identifier used in
+local duels, anything you type, your contacts, files or precise location, and your coin balance
+or full inventory.</p>
+<p><strong>How we limit it:</strong> Google Signals is turned off, and the options that let
+Google use this data for its own products or advertising are turned off. We see only aggregate
+reports and individual crash reports; we cannot identify you from them.</p>
+<p><strong>Retention:</strong> statistics are kept for 14 months and crash reports for 90 days,
+after which Google deletes them.</p>
+<p><strong>Consent (European Economic Area, United Kingdom and Switzerland):</strong> the consent
+form mentioned in section 5 also covers analytics. If you do not consent, Google Analytics does
+not store an identifier on your device and only receives limited, non-identifying signals. You
+can change your choice from the Game's Options screen. <strong>Crash reports are not collected
+in these regions</strong>, whatever you choose.</p>
+<p>Google may process this information on servers outside your country. How Google handles
+Firebase data is explained at
+<a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</p>
+<h2>7. What the Game does not do</h2>
 
 <p>To be explicit, TORRE does <strong>not</strong>:</p>
 
@@ -182,8 +233,9 @@ non-identifying reports such as how many ads were shown in total.</p>
   <li>Require or offer any account, login, registration or email address</li>
   <li>Contain chat, messaging, forums, or user-to-user text of any kind other than the
       player name shown during a local duel</li>
-  <li>Use analytics, crash reporting, or any tracking or measurement tool of ours</li>
-  <li>Use cookies or similar web technologies</li>
+  <li>Track you across other apps or websites, or link the statistics of section 6 to your
+      advertising ID</li>
+  <li>Use browser cookies</li>
   <li>Collect, request, or store your contacts, photos, files, microphone, camera, calendar
       or location data</li>
   <li>Sell or share any information with data brokers</li>
@@ -191,7 +243,7 @@ non-identifying reports such as how many ads were shown in total.</p>
       changes, this Policy will be updated before that version is released</li>
 </ul>
 
-<h2>7. Children</h2>
+<h2>8. Children</h2>
 
 <p>TORRE is not directed to children under 13, and we do not knowingly collect personal
 information from them. In Google Play the Game is rated for players aged 13 and over, and it
@@ -205,15 +257,18 @@ steps.</p>
 <p>If you are between 13 and 18, we suggest you review this Policy with a parent or guardian,
 and that you use a nickname rather than your real name in the local two-player mode.</p>
 
-<h2>8. Data retention and your rights</h2>
+<h2>9. Data retention and your rights</h2>
 
-<p>Because we hold no data about you, there is nothing for us to retain, correct, export, or
-delete on your behalf. All Game data is under your control:</p>
+<p>Your progress is held only on your device, and we hold no data that identifies you. The
+anonymous statistics and crash reports of section 6 are deleted automatically after the periods
+stated there. All Game data is under your control:</p>
 
 <ul>
   <li><strong>To delete everything:</strong> uninstall the Game. To also remove the cloud
       backup described in section 2, delete the Game's backup in your device settings under
       Google &gt; Backup.</li>
+  <li><strong>Uninstalling also resets</strong> the installation identifier of section 6, so
+      new statistics cannot be linked to the old ones.</li>
   <li><strong>For data held by Google in connection with advertising</strong>, use Google's
       own controls and the link in section 5.</li>
 </ul>
@@ -221,14 +276,14 @@ delete on your behalf. All Game data is under your control:</p>
 <p>If you have a question about your data in relation to the Game, write to
 <a href="mailto:mylsoftware01@gmail.com">mylsoftware01@gmail.com</a> and we will answer.</p>
 
-<h2>9. Changes to this Policy</h2>
+<h2>10. Changes to this Policy</h2>
 
 <p>We may update this Policy when the Game changes. The current version is always available
 at the address where you are reading it and inside the Game itself, under Options &gt; About.
 The "Last updated" date at the top shows when it last changed. Continuing to use the Game
 after a change means you accept the updated Policy.</p>
 
-<h2>10. Contact</h2>
+<h2>11. Contact</h2>
 
 <p><strong>MyL Software</strong><br>
 Email: <a href="mailto:mylsoftware01@gmail.com">mylsoftware01@gmail.com</a></p>
